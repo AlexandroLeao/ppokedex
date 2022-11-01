@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Nabla&family=Open+Sans:wght@300;400;500&family=Press+Start+2P&family=Sacramento&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Press Start 2P', cursive;
+}
+
+body {
+   text-align: center;
+   width: 100%;
+   height: 100vh;
+   background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+   background-size: 400% 400%
+   position: relative;
+}
+
+.wrapper {
+    display: flex;
+    gap: 50px;
+}
+
+.box {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    position: relative;
+    left: 34rem;
+    transform: translate(-2%, 80%);
+    top: -30%;
+}
+
+.box:nth-child(1) {
+    background: #7C203A;
+}
+.box:nth-child(2) {
+    background: #F85959;
+}
+.box:nth-child(3) {
+    background: #FF9F68;
+}
+.box:nth-child(4) {
+    background: #FEFF89;
+}
+
+.ball {
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    border-radius: 50%;
+    top: -10%;
+    left: -10%;
+    z-index:1;
+    background: inherit;
+    opacity: 0.3;
+    animation: an 3s infinite linear;
+}
+
+@keyframes an {
+    
+}
+
+
+main {
+    display: inline-block;
+    margin-top: 2%;
+    padding: 15px;
+    position: relative;
+}
+
+.pokedex {
+    width: 100%;
+    max-width: 350px;
+}
+
+.pokemon__image {
+    position: absolute;
+    left: 52%;
+    bottom: 54%;
+    transform: translate(-63%, 20%);
+    height: 18%;
+}
+
+.pokemon__data {
+    position: absolute;
+    font-weight: 600;
+    color: #17B978;
+    top: 55.9%;
+    right: 30%;
+    font-size: clamp(8px, 5vw, 13px);
+}
+
+.pokemon__name {
+    color: #14C38E;
+    text-transform: capitalize;
+}
+
+.form {
+    position: absolute;
+    width: 65%;
+    top: 65%;
+    left: 13.5%;
+}
+
+.input_search {
+    width: 100%;
+    padding: 1%;
+    outline: none;
+    border: 2px solid #14C38E;
+    border-radius: 5px;
+    font-weight: 500;
+    color: #314942;
+    font-size: clamp(8px, 5vw, 0.9rem);
+    box-shadow: -3px 4px 0 #888, -5px 7px 0 #333;
+}
+
+.buttons {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    width: 65%;
+    transform: translate(-56%, 0);
+    display: flex;
+    gap: 20px;
+}
+
+.button {
+    width: 50%;
+    padding: 4%;
+    border: 2px solid #000;
+    border-radius: 5px;
+    font-size: clamp(8px, 5vw, 0.9rem);
+    font-weight: 600;
+    color: white;
+    background-color: #444;
+    box-shadow: -2px 3px 0 #222, -4px 6px 0 #000;
+}
+
+.button:active {
+    box-shadow: inset -4px 4px 0 #222;
+    font-size: 0.9rem;
+}
